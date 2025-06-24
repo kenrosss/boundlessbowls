@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="yeah.js"></script>
+  <title>Menu</title>
+</head>
+<body>
+    <div class="wrapper">
+  <header style="display: flex; align-items: center; justify-content: space-between; padding: 10px 20px;">
+    <div style="display: flex; align-items: center;">
+      <img src="mga pictures/dakilang_logo.jpg" alt="Logo" style="height: 100px; margin-right: 12px;">
+      <h1 style="margin: 0;">Boundless Bowls</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About/Contact</a>
+      <a href="cart.html" class="cart-count">Cart (0)</a>
+    </nav>
+  </header>
+
+  <div class="container">
+        <h2 style="margin-top: 40px; border-bottom: 2px solid #8B0000; display: inline-block;">Ramen</h2>
+    <div class="menu-item">
+      <img src="mga pictures/Shoyu-Ramen.jpg" alt="Shoyu Ramen" width="200">
+      <p>Shoyu Ramen - ₱250</p>
+      <button onclick="addToCart('Shoyu Ramen', 250)">Add to Cart</button>
+      <a href="cart.html"><button onclick="addToCart('Shoyu Ramen', 250)">Buy Now</button></a>
+    </div>
+
+    <div class="menu-item">
+      <img src="mga pictures/tonkotsu-ramen.jpg" alt="Tonkotsu Ramen" width="200">
+      <p>Tonkotsu Ramen - ₱300</p>
+      <button onclick="addToCart('Tonkotsu Ramen', 300)">Add to Cart</button>
+      <a href="cart.html"><button onclick="addToCart('Tonkotsu Ramen', 300)">Buy Now</button></a>
+    </div>
+
+    <div class="menu-item">
+      <img src="mga pictures/miso_ramen.jpg" alt="Miso Ramen" width="200">
+      <p>Miso Ramen - ₱280</p>
+      <button onclick="addToCart('Miso Ramen', 280)">Add to Cart</button>
+      <a href="cart.html"><button onclick="addToCart('Miso Ramen', 280)">Buy Now</button></a>
+    </div>
+
+    <div class="menu-item">
+      <img src="mga pictures/spicy_tantanmen.webp" alt="Spicy Tantanmen" width="200">
+      <p>Spicy Tantanmen - ₱310</p>
+      <button onclick="addToCart('Spicy Tantanmen', 310)">Add to Cart</button>
+      <a href="cart.html"><button onclick="addToCart('Spicy Tantanmen', 310)">Buy Now</button></a>
+    </div>
+
+    <div class="menu-item">
+      <img src="mga pictures/shio-ramen.jpg" alt="Shio Ramen" width="200">
+      <p>Shio Ramen - ₱260</p>
+      <button onclick="addToCart('Shio Ramen', 260)">Add to Cart</button>
+      <a href="cart.html"><button onclick="addToCart('Shio Ramen', 260)">Buy Now</button></a>
+    </div>
+
+        <h2 style="margin-top: 40px; border-bottom: 2px solid #8B0000; display: inline-block;">Appetizers</h2>
+    <div class="menu-item">
+      <img src="mga pictures/gyoza.jpg" alt="Gyoza" width="200">
+      <p>Gyoza (5 pcs) - ₱150</p>
+      <button onclick="addToCart('Gyoza', 150)">Add to Cart</button>
+      <a href="cart.html"><button onclick="addToCart('Gyoza', 150)">Buy Now</button></a>
+    </div>
+
+    <div class="menu-item">
+      <img src="mga pictures/takoyaki.jpg" alt="Takoyaki" width="200">
+      <p>Takoyaki (4 pcs) - ₱140</p>
+      <button onclick="addToCart('Takoyaki', 140)">Add to Cart</button>
+      <a href="cart.html"><button onclick="addToCart('Takoyaki', 140)">Buy Now</button></a>
+    </div>
+
+    <h2 style="margin-top: 40px; border-bottom: 2px solid #8B0000; display: inline-block;">Dessert</h2>
+    <div class="menu-item">
+      <img src="mga pictures/mochi.webp" alt="Mochi Ice Cream" width="200">
+      <p>Mochi Ice Cream (2 pcs) - ₱100</p>
+      <button onclick="addToCart('Mochi Ice Cream', 100)">Add to Cart</button>
+      <a href="cart.html"><button onclick="addToCart('Mochi Ice Cream', 100)">Buy Now</button></a>
+    </div>
+
+    <div class="menu-item">
+      <img src="mga pictures/anmitsu.webp" alt="Anmitsu" width="200">
+      <p>Anmitsu (2 pcs) - ₱110</p>
+      <button onclick="addToCart('Anmitsu', 110)">Add to Cart</button>
+      <a href="cart.html"><button onclick="addToCart('Anmitsu', 110)">Buy Now</button></a>
+    </div>
+
+    <div class="menu-item">
+      <img src="mga pictures/matcha_cheesecake.jpg" alt="Matcha Cheesecake slice" width="200">
+      <p>Matcha Cheesecake slice(1 pc) - ₱120</p>
+      <button onclick="addToCart('Matcha Cheesecake slice', 120)">Add to Cart</button>
+      <a href="cart.html"><button onclick="addToCart('Matcha Cheesecake slice', 120)">Buy Now</button></a>
+    </div>
+
+    <h2 style="margin-top: 40px; border-bottom: 2px solid #8B0000; display: inline-block;">Beverages</h2>
+    <div class="menu-item">
+      <img src="mga pictures/matcha-boba-tea.jpg" alt="Matcha Milk Tea" width="200">
+      <p>Matcha Milk Tea - ₱120</p>
+      <button onclick="addToCart('Matcha Milk Tea', 120)">Add to Cart</button>
+      <a href="cart.html"><button onclick="addToCart('Matcha Milk Tea', 120)">Buy Now</button></a>
+    </div>
+
+    <div class="menu-item">
+      <img src="mga pictures/icedteaone.jpg" alt="Iced Calamansi Tea" width="200">
+      <p>Iced Calamansi Tea - ₱90</p>
+      <button onclick="addToCart('Iced Calamansi Tea', 90)">Add to Cart</button>
+      <a href="cart.html"><button onclick="addToCart('Iced Calamansi Tea', 90)">Buy Now</button></a>
+    </div>
+
+    <div class="menu-item">
+      <img src="mga pictures/ramune.webp" alt="Ramune Soda" width="200">
+      <p>Ramune Soda - ₱105</p>
+      <button onclick="addToCart('Ramune Soda', 105)">Add to Cart</button>
+      <a href="cart.html"><button onclick="addToCart('Ramune Soda', 105)">Buy Now</button></a>
+    </div>
+   </div>
+  </div>
+<footer style="background: #8B0000; color: white; text-align: center; padding: 15px; margin-top: 40px;">
+  <p>&copy; 2025 Boundless Bowls. All rights reserved.</p>
+  <p style="font-size: 14px;">📍 Silang, Cavite | 📞 0947-107-1649 | ✉️ Boundlessbowls@email.com</p>
+</footer>
+
+</body>
+</html>

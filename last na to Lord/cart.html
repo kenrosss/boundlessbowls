@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="yeah.js"></script>
+  <title>Cart</title>
+</head>
+<body onload="displayCart()">
+    <div class="wrapper">
+  <header style="display: flex; align-items: center; justify-content: space-between; padding: 10px 20px;">
+  <div style="display: flex; align-items: center;">
+    <img src="mga pictures/dakilang_logo.jpg" alt="Logo" style="height: 100px; margin-right: 12px;">
+    <h1 style="margin: 0;">Boundless Bowls </h1>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About/Contact</a>
+    <a href="cart.html" class="cart-count">Cart (0)</a>
+  </nav>
+</header>
+<h2 class="cart-title">🛒 Your Cart</h2>
+<p class="cart-message">You're one step closer to delicious ramen!</p>
+<p id="empty-cart" style="display: none; text-align: center; font-size: 18px; color: rgb(81, 80, 80);">Your cart is empty 🍜</p>
+
+ <div class="container">
+  <div id="cart-items"></div>
+  <p id="cart-total"></p>
+
+  <p id="empty-cart" style="display: none; text-align: center; font-size: 18px; color: gray;">
+    Your cart is empty 🍜<br>Please add items before checking out.
+  </p>
+
+  <form id="checkout-form" action="ty.html">
+    <input type="text" placeholder="Name" required>
+    <input type="text" placeholder="Address" required>
+    <input id="phone" type="text" placeholder="Phone Number" maxlength="11" required>
+    <input type="email" placeholder="Email Address" required>
+    <input type="submit" value="Checkout">
+  </form>
+ </div>
+</div>
+
+<footer style="background: #8B0000; color: white; text-align: center; padding: 15px; margin-top: 40px;">
+  <p>&copy; 2025 Boundless Bowls. All rights reserved.</p>
+  <p style="font-size: 14px;">📍 Silang, Cavite | 📞 0947-107-1649 | ✉️ Boundlessbowls@email.com</p>
+</footer>
+
+</body>
+<script>
+  document.getElementById("phone").addEventListener("input", function () {
+    this.value = this.value.replace(/[^0-9]/g, "");
+  });
+</script>
+
+</html>
